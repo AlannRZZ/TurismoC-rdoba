@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Experiencias Turísticas | Córdoba Capital</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+
+body{
+    background-color:#d8c29c;
+}
+
+/* PORTADA */
+
+.hero{
+    height:70vh;
+    background:
+    linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+    url("./img/exp.jpeg");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.hero h1{
+    font-size:4rem;
+    font-weight:bold;
+}
+
+.hero p{
+    font-size:1.3rem;
+}
+.hero{
+    position: relative;
+    height:60vh;
+    background:
+    linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+    url("./img/exp.jpeg");
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+
+    color:white;
+}
+
+/* Ruta de navegación */
+.breadcrumb-hero{
+    position:absolute;
+    top:40px;
+    left:80px;
+    font-size:1.1rem;
+}
+
+.breadcrumb-hero a{
+    color:white;
+    text-decoration:none;
+}
+
+.breadcrumb-hero a:hover{
+    text-decoration:underline;
+}
+
+.breadcrumb-hero span{
+    color:white;
+}
+/* EXPERIENCIAS */
+
+.experiencia{
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 5px 20px rgba(0,0,0,.1);
+    margin-bottom:40px;
+    transition:.3s;
+}
+
+.experiencia:hover{
+    transform:translateY(-5px);
+}
+
+.experiencia img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.icono{
+    font-size:40px;
+    color:#0d6efd;
+}
+
+.btn-volver{
+    padding:12px 30px;
+    border-radius:30px;
+    text-decoration:none;
+    background:#212529;
+    color:white;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn-volver:hover{
+    background:black;
+    color:white;
+}
+.experiencia{
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,.1);
+    margin: 0 auto 60px auto;
+    max-width: 900px;
+    transition: .3s;
+}
+
+</style>
+
+</head>
+<body>
+
+<!-- PORTADA -->
+
+<section class="hero">
+
+    <div class="breadcrumb-hero">
+        <a href="index.html">Inicio</a>
+        <span> / </span>
+        <span>Experiencias</span>
+    </div>
+
+    <div>
+        <h1>Experiencias en Córdoba</h1>
+        <p>Viví una experiencia única en Córdoba Capital</p>
+    </div>
+
+</section>
+<div class="container py-5">
+
+    <!-- EXPERIENCIA 1 -->
+    <div class="row experiencia align-items-center">
+        <div class="col-md-5">
+            <img src="./img/centro.jpeg">
+        </div>
+        <div class="col-md-7 p-4">
+            <i class="bi bi-building icono"></i>
+            <h2>Recorrer el Centro Histórico</h2>
+
+            <p>
+                Descubrí iglesias, edificios coloniales y plazas
+                que cuentan la historia de la ciudad.
+            </p>
+        </div>
+
+    </div>
+    <!--Experiencia 2 -->
+        <div class="row experiencia align-items-center">
+
+
+        <div class="col-md-7 p-4">
+            <i class="bi bi-tree-fill icono"></i>
+            <h2>Pasear por el Parque Sarmiento</h2>
+
+            <p>
+                Disfrutá del pulmón verde más importante de Córdoba,
+                ideal para caminar, hacer deporte o relajarse.
+            </p>
+        </div>
+        <div class="col-md-5">
+            <img src="./img/parque.jpg">
+        </div>
+
+    </div>
+
+
+    <!-- EXPERIENCIA 3 -->
+
+    <div class="row experiencia align-items-center">
+
+        <div class="col-md-5">
+            <img src="./img/gas.jpeg">
+        </div>
+
+        <div class="col-md-7 p-4">
+            <i class="bi bi-cup-hot-fill icono"></i>
+            <h2>Disfrutar la Gastronomía</h2>
+
+            <p>
+                Probá las clásicas cafeterías, restaurantes y bares
+                que forman parte de la cultura cordobesa.
+            </p>
+        </div>
+
+    </div>
+
+    <!-- EXPERIENCIA 4 -->
+
+    <div class="row experiencia align-items-center">
+
+        <div class="col-md-7 p-4">
+            <i class="bi bi-camera-fill icono"></i>
+            <h2>Fotografiar el Paseo del Buen Pastor</h2>
+
+            <p>
+                Uno de los lugares más visitados de la ciudad,
+                con espectáculos, fuentes y espacios culturales.
+            </p>
+        </div>
+
+        <div class="col-md-5">
+            <img src="./img/buenpa.jpg">
+        </div>
+
+    </div>
+
+    <!-- EXPERIENCIA 5 -->
+
+    <div class="row experiencia align-items-center">
+
+        <div class="col-md-5">
+            <img src="./img/noche.jpeg">
+        </div>
+
+        <div class="col-md-7 p-4">
+            <i class="bi bi-moon-stars-fill icono"></i>
+            <h2>Vivir la Noche Cordobesa</h2>
+
+            <p>
+                Bares, peñas y espectáculos musicales hacen de
+                Córdoba una ciudad vibrante durante la noche.
+            </p>
+        </div>
+
+    </div>
+<script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

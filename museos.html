@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Museos de Córdoba Capital</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body{
+            background-color:#e2d9ae;
+        }
+
+        .hero{
+    background:
+    linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
+    url("img/museoss.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    height: 50vh;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.card{
+    width: 320px;
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: .4s;
+    margin: auto;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0,0,0,.2);
+}
+
+.card img{
+    height: 220px;
+    object-fit: cover;
+}
+
+.card-body{
+    text-align: center;
+}
+
+.row{
+    justify-content: center;
+}
+.btn-info-museo{
+    background: linear-gradient(135deg, #0d6efd, #0a58ca);
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.btn-info-museo:hover{
+    background: linear-gradient(135deg, #0a58ca, #084298);
+    color: white;
+    transform: scale(1.05);
+}
+
+.btn-volver{
+    background: #212529;
+    color: white;
+    border: none;
+    padding: 14px 35px;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.btn-volver:hover{
+    background: #000;
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0,0,0,.3);
+}
+.hero h1{
+    font-size: 4rem;
+    font-weight: bold;
+    text-shadow: 3px 3px 10px rgba(0,0,0,.7);
+}
+
+.hero p{
+    font-size: 1.4rem;
+    text-shadow: 2px 2px 8px rgba(0,0,0,.7);
+}
+    </style>
+</head>
+<body>
+
+    <!-- ENCABEZADO -->
+
+    <section class="hero">
+
+<div class="container hero-content">
+
+<nav>
+<ol class="breadcrumb text-white">
+<li class="breadcrumb-item">
+<a href="index.html" class="text-white">Inicio</a>
+</li>
+<li class="breadcrumb-item active text-white">Museos </li>
+</ol>
+</nav>
+
+<h1>Museos Historicos</h1>
+
+</div>
+</section>
+<div class="container py-5">
+
+    <div class="row justify-content-center">
+
+        <!-- MUSEO 1 -->
+        <div class="col-auto mb-4">
+            <div class="card shadow-lg">
+                <img src="./img/palacioferr.jpg" class="card-img-top">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Museo Superior de Bellas Artes "Evita" Palacio Ferreyra</h5>
+                    <p class="card-text">
+                        Museo Evita con exposiciones de arte argentino dentro de un espectacular palacio francés.
+                    </p>
+                    <a href="https://turismo.cordoba.gob.ar/palacio-ferreyra-museo-evita/" class="btn-info-museo">
+    Ver detalles
+</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- MUSEO 2 -->
+        <div class="col-auto mb-4">
+            <div class="card shadow-lg">
+                <img src="./img/carafa.jpg" class="card-img-top">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Museo Emilio Caraffa</h5>
+                    <p class="card-text">
+                        Uno de los principales centros de arte contemporáneo de la provincia de Córdoba.
+                    </p>
+                    <a href="https://turismo.cordoba.gob.ar/museo-emilio-caraffa-mec/" class="btn-info-museo">
+    Ver detalles
+</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- MUSEO 3 -->
+        <div class="col-auto mb-4">
+            <div class="card shadow-lg">
+                <img src="./img/SOBREMONTE.jpg" class="card-img-top">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Museo Histórico Marqués de Sobre Monte</h5>
+                    <p class="card-text">
+                        La casa colonial más antigua de la ciudad, símbolo de la historia cordobesa.
+                    </p>
+                    <a href="https://turismo.cordoba.gob.ar/museo-historico-marques-de-sobremonte/" class="btn-info-museo">
+    Ver detalles
+</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- MUSEO 4 -->
+        <div class="col-auto mb-4">
+            <div class="card shadow-lg">
+                <img src="./img/naturales.jpg" class="card-img-top">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Museo de Ciencias Naturales</h5>
+                    <p class="card-text">
+                        Fósiles, minerales, dinosaurios y exhibiciones científicas para todas las edades.
+                    </p>
+                 <a href="https://turismo.cordoba.gob.ar/museo-provincial-de-ciencias-naturales/" class="btn-info-museo">
+    Ver detalles
+</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- MUSEO 5 -->
+        <div class="col-auto mb-4">
+            <div class="card shadow-lg">
+                <img src="./img/genaro.jpeg" class="card-img-top">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Museo Genaro Pérez</h5>
+                    <p class="card-text">
+                        Importante colección de arte argentino, con muestras permanentes y temporales.
+                    </p>
+                    <a href="https://turismo.cordoba.gob.ar/museo-genaro-perez/" class="btn-info-museo">
+    Ver detalles
+</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+      
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

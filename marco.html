@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Museo Arco de Córdoba MARCO</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+
+body{
+    background:#f5f5f5;
+    font-family: Arial, sans-serif;
+}
+
+/* BANNER */
+
+.hero{
+    height:350px;
+    background:url("./img/marco.jpg") center center/cover;
+    position:relative;
+}
+
+.hero::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.35);
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    color:white;
+    padding-top:100px;
+}
+
+.hero h1{
+    font-size:55px;
+    font-weight:800;
+    text-transform:uppercase;
+}
+
+.breadcrumb a{
+    color:white;
+}
+
+.breadcrumb-item.active{
+    color:white;
+}
+
+/* BOTONES */
+
+.nav-tabs-custom{
+    margin-top:-22px;
+    position:relative;
+    z-index:10;
+}
+
+.btn-tab{
+    border:none;
+    border-radius:30px;
+    padding:10px 25px;
+    color:white;
+    font-weight:600;
+    margin-right:10px;
+}
+
+.btn-resumen{
+    background:#1ea3e6;
+}
+
+.btn-mapa{
+    background:#6c757d;
+}
+
+/* CONTENIDO */
+
+.contenido{
+    background:white;
+    padding:40px;
+    margin-top:10px;
+}
+
+.contenido p{
+    font-size:22px;
+    line-height:1.8;
+    color:#333;
+}
+
+.mapa{
+    width:100%;
+    height:450px;
+    border:none;
+    border-radius:10px;
+}
+
+@media(max-width:768px){
+
+.hero{
+    height:250px;
+}
+
+.hero h1{
+    font-size:32px;
+}
+
+.contenido p{
+    font-size:18px;
+}
+
+}
+
+</style>
+</head>
+<body>
+
+<!-- BANNER -->
+
+<section class="hero">
+
+<div class="container hero-content">
+
+<nav aria-label="breadcrumb">
+<ol class="breadcrumb">
+<li class="breadcrumb-item">
+<a href="index.html">Inicio</a>
+</li>
+
+<li class="breadcrumb-item">
+<a href="#">Museo Arco de CÓRDOBA</a>
+</li>
+</ol>
+</nav>
+
+<h1>MUSEO ARCO DE CÓRDOBA MARCO</h1>
+
+</div>
+
+</section>
+
+<!-- BOTONES -->
+
+<div class="container nav-tabs-custom">
+
+<button class="btn-tab btn-resumen"
+onclick="mostrarResumen()">
+Resumen
+</button>
+
+<button class="btn-tab btn-mapa"
+onclick="mostrarMapa()">
+Mapa
+</button>
+
+</div>
+
+<!-- CONTENIDO -->
+
+<div class="container">
+
+<div class="contenido" id="resumen">
+
+<p>
+El Museo del Arco de Córdoba (MARCO) fue creado con el fin de exponer una línea histórica de la ciudad de Córdoba.
+La misma se puede observar ilustrada en las paredes de ambas torres, interviniendo los cuatro pisos con referencias
+que van de los sanavirones hasta el siglo XX.
+</p>
+
+<p>
+El relato histórico se complementa con algunos objetos históricos en exhibición y una muestra de fotografías
+contemporáneas sobre la ciudad.
+</p>
+
+<p>
+Se ubica en el interior del Arco de Córdoba, un monumento inaugurado el 6 de julio de 1943,
+diseñado como un arco de triunfo a imagen y semejanza del grabado en el Escudo de la Provincia.
+Consta de dos torreones de estilo medieval español con fuertes reminiscencias al arte románico.
+</p>
+
+</div>
+
+<div class="contenido d-none" id="mapa">
+
+<h3 class="mb-4">
+Ubicación del Museo Arco de Córdoba (MARCO)
+</h3>
+
+<iframe
+class="mapa"
+src="https://www.google.com/maps?q=Arco%20de%20Cordoba%20Cordoba%20Argentina&output=embed">
+</iframe>
+
+</div>
+
+</div>
+
+<script>
+
+function mostrarResumen(){
+    document.getElementById("resumen").classList.remove("d-none");
+    document.getElementById("mapa").classList.add("d-none");
+}
+
+function mostrarMapa(){
+    document.getElementById("mapa").classList.remove("d-none");
+    document.getElementById("resumen").classList.add("d-none");
+}
+
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
